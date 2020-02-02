@@ -1,0 +1,161 @@
+body {
+    position: relative;
+    background-color: #283333;
+}
+
+li, ul {
+    padding: 0;
+    list-style: none;
+}
+
+.layer {
+    padding: 0;
+    margin: 0;
+}
+
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 780px;
+    background-image: url('images/bg-header.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+#content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.logo {
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 172px;
+    z-index: 3;
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        text-align: center;
+    }
+}
+
+
+.action-buttons {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 608px;
+    margin-bottom: 40px;
+    z-index: 9;
+}
+
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        padding-top: 448px;
+    }
+
+    #header {
+        background-size: auto 620px;
+    }
+
+    .logo {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.panel {
+    margin: 0 20px;
+}
+
+#youtube-video {
+    display: none;
+}
+
+#youtube-poster {
+    display: block;
+    cursor: pointer;
+}
+
+.video-panel {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.video-panel iframe, .video-panel img, .video-panel div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    border: solid 1px #666;
+    background-color: black;
+}
+
+.responsive-mobile { display: none; }
+.responsive-computer { display: block; }
+
+@media screen and (max-width: 480px) {
+    .responsive-mobile { display: block; }
+    .responsive-computer { display: none; }
+}
+
+.photo-panel {
+    line-height: 0;
+}
+
+.photo-panel .gutter {
+    width: 15px;
+}
+
+.photo-panel td {
+    padding-bottom: 15px;
+}
+
+.photo-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border: solid 1px #666;
+}
+
+
+.links {
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.links li {
+    padding: 24px;
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 25px;
+}
